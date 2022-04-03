@@ -1,7 +1,7 @@
 [
     {
-        "name": "httpd-varun",
-        "imageUri": "436174799454.dkr.ecr.us-east-1.amazonaws.com/cicd-repo:latest"
+        "name": "httpd-web",
+        "imageUri": "436174799454.dkr.ecr.us-east-1.amazonaws.com/demo-doc-repo:latest"
     }
 ]
 
