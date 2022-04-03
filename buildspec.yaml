@@ -10,9 +10,9 @@ phases:
       - echo Build started on `date`
       - echo Building the Docker image...
       - docker build -t  web:1 .
-      - docker tag web:1 276701924684.dkr.ecr.us-east-1.amazonaws.com/manikcloud
+      - docker tag web:1 436174799454.dkr.ecr.us-east-1.amazonaws.com/cicd-repo:latest
   post_build:
     commands:
       - echo Build completed on `date`
       - echo Pushing the Docker image...
-      - docker push 276701924684.dkr.ecr.us-east-1.amazonaws.com/manikcloud
+      - docker push 436174799454.dkr.ecr.us-east-1.amazonaws.com/cicd-repo:latest

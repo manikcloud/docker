@@ -1,11 +1,4 @@
-FROM centos:centos6
-
-MAINTAINER VarunMnaik
-
-RUN yum -y install httpd
-
-COPY index.html /var/www/html/
-
-CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
-
+FROM httpd:2.4
+MAINTAINER Varun
+COPY ./index.html /usr/local/apache2/htdocs/
 EXPOSE 80
