@@ -11,3 +11,14 @@ docker build -t web:v2 .
 docker rm `docker ps -aq` -f
 docker images 
 docker run -d -p80:80 web:v2 
+
+docker pull httpd
+  127  docker ps 
+  128  docker images 
+  129  docker 
+  130  docker run -d -p80:80 httpd
+  131  docker ps 
+  132  docker run -d -p80:80 httpd
+  133  docker run -d -P httpd
+  134  docker ps 
+
