@@ -1,0 +1,13 @@
+
+docker build -t web .
+docker ps 
+docker images 
+docker pa -aq
+docker pas -aq
+docker ps -aq
+docker rm `docker ps -aq` -f
+docker run -d -p80:80 web 
+docker build -t web:v2 .
+docker rm `docker ps -aq` -f
+docker images 
+docker run -d -p80:80 web:v2 
