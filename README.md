@@ -48,7 +48,3 @@ To remove the stopped container, execute the following command:
 ```
 docker rm my-httpd
 ```
-
-## License
-
-This project is open-source and available under the [MIT License](LICENSE).
